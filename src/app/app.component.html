@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<table>
+  <th>Name</th>
+  <th>Location</th>
+  <th>Phone Number</th>
+  <tbody *ngFor="let user of users">
+    <td>{{user.name}}</td>
+    <td>{{user.location}}</td>
+    <td>{{user.phone | phoneNumberFormat}}</td>
+  </tbody>
+</table>
